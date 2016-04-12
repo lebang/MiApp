@@ -17,7 +17,7 @@ public class HomeWatcher {
 
     public interface OnHomePressedListener{
         public void onHomePressed();
-        public void onHomeLongPressed();
+        public void onSettingPressed();
     }
 
     public HomeWatcher(Context context){
@@ -57,7 +57,7 @@ public class HomeWatcher {
                         if(reason.equals(SYSTEM_DIALOG_REASON_HOME_KEY)){
                             mListener.onHomePressed();
                         }else if(reason.equals(SYSTEM_DIALOG_REASON_RECENT_APPS)){
-                            mListener.onHomeLongPressed();
+                            mListener.onSettingPressed();
                         }
                     }
                 }

@@ -3,6 +3,7 @@ package com.miapp.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -52,5 +53,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         }
 
         ft.commit();
+    }
+
+    @Override
+    public void onHomePressed() {
+        super.onHomePressed();
+        Log.d("homepress:","main activity home press");
     }
 }
