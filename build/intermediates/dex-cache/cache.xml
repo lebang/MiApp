@@ -1,2 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a04b1c7005a36bd0f53af1ecc307f5299159dbd8">
+        <dex dex="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_77cd99d67a1bbb13ed4ce5cd4f9f0ab879b99eb3.jar" />
+    </item>
+    <item
+        jar="/Users/lebang/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1_f9dcf3836a54e51753f6cf60837f7a811c757459.jar" />
+    </item>
+    <item
+        jar="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="05046e7ec593dc82570260e2aa14fa265391e07a">
+        <dex dex="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/pre-dexed/debug/instant-run_86763fb771d6b696617348ff16810efbd2a98249.jar" />
+    </item>
+    <item
+        jar="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.2.1_d18fafaa6a67970d6ec6a258551c96271423ce33.jar" />
+    </item>
+    <item
+        jar="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.2.1_eadab511a8aa4047706a01e6b36f5832bbf94f33.jar" />
+    </item>
+    <item
+        jar="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.2.1_565bf359c8adb8fdd944765206fff4aac553318d.jar" />
+    </item>
+    <item
+        jar="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.2.1_c7370a2a74cdd05393620bcc94f11539af868a7c.jar" />
+    </item>
+    <item
+        jar="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/Users/lebang/AndroidApp/MiApp/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1_9e634e558241a49a59fd4f7a4fd5be5611a5fe1f.jar" />
+    </item>
+
+</items>
