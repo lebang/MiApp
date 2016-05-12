@@ -1,4 +1,4 @@
-package com.miapp.util;
+package com.miapp.Util;
 
 import android.view.View;
 

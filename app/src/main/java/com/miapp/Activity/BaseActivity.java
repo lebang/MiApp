@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.miapp.util.HomeWatcher;
+import com.miapp.Util.HomeWatcher;
+
+import butterknife.ButterKnife;
 
 /**
  * Created by lebang on 16-4-8.
