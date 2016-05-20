@@ -3,8 +3,10 @@ package com.miapp.Activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.miapp.Util.HomeWatcher;
+import com.miapp.Util.ViewUtils;
 
 import butterknife.ButterKnife;
 
@@ -54,5 +56,9 @@ public class BaseActivity extends Activity implements HomeWatcher.OnHomePressedL
     @Override
     public void onSettingPressed() {
 
+    }
+
+    public <E extends View> E $(int resId){
+        return ViewUtils.findViewById(this, resId);
     }
 }
