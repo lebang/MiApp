@@ -1,52 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:context=".Activity.MainActivity"
+              android:orientation="vertical"
     >
 
-    <LinearLayout
-        android:id="@+id/side_bar"
+    <!--<LinearLayout-->
+        <!--android:id="@+id/side_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingTop="40dp"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tab_home"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="HOME"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tab_list"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="40dp"-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:text="LIST"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tab_about"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="ABOUT"-->
+            <!--/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/editText"-->
+        <!--/>-->
+        <!---->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/main_wrapper"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+
+    <Button
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:paddingTop="40dp"
-        >
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"/>
 
-        <TextView
-            android:id="@+id/tab_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="HOME"
-            />
+    <fragment
+            android:id="@+id/fragment1"
+            android:name="com.miapp.Fragment.FragmentHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
-        <TextView
-            android:id="@+id/tab_list"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:layout_marginTop="40dp"
-            android:text="LIST"
-            />
+    <!--</LinearLayout>-->
 
-        <TextView
-            android:id="@+id/tab_about"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ABOUT"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/main_wrapper"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_toRightOf="@+id/side_bar"
-        android:orientation="horizontal"
-        >
-
-    </LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>

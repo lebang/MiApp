@@ -5,6 +5,17 @@ import android.view.View;
 
 /**
  * Created by lebang on 16-5-12.
+ *
+ * baseActivity:
+ *
+ *  public <E extends View> E $(int resId){
+        return ViewUtils.findViewById(this, resId);
+    }
+ *
+ * use:
+ *
+ * btn = $(R.id.btn);
+ *
  */
 public final class ViewUtils {
 
