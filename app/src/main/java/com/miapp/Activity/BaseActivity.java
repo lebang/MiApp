@@ -61,4 +61,7 @@ public class BaseActivity extends Activity implements HomeWatcher.OnHomePressedL
     public <E extends View> E $(int resId){
         return ViewUtils.findViewById(this, resId);
     }
+    public <E extends View> E $(View view, int resId){
+        return ViewUtils.findViewById(view, resId);
+    }
 }
