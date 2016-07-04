@@ -8,9 +8,11 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 
 /**
  * Created by lebang on 16-7-4.
@@ -45,7 +47,7 @@ public class DrawerActivity extends BaseActivity {
             }
         };
         mDrawerToggle.syncState();
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
         //设置菜单列表
         arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, lvs);
         sidemenu.setAdapter(arrayAdapter);

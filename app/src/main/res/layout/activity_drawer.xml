@@ -40,13 +40,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#fff"
+                android:orientation="vertical"
                 android:layout_gravity="start">
             <ListView
                     android:id="@+id/sidemenu"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:divider="@null"
                     android:text="DrawerLayout"/>
+            <TextView
+                    android:text="我是侧边栏"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
         </LinearLayout>
     </android.support.v4.widget.DrawerLayout>
 
