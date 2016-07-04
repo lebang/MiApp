@@ -1,7 +1,7 @@
 package com.miapp.Activity;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -13,7 +13,7 @@ import butterknife.ButterKnife;
 /**
  * Created by lebang on 16-4-8.
  */
-public class BaseActivity extends Activity implements HomeWatcher.OnHomePressedListener {
+public class BaseActivity extends AppCompatActivity implements HomeWatcher.OnHomePressedListener {
 
     HomeWatcher mHomeWatcher;
 
