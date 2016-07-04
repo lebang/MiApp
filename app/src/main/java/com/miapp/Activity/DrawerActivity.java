@@ -31,11 +31,9 @@ public class DrawerActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer);
-        findViews(); //获取控件
-        toolbar.setTitle("Toolbar");//设置Toolbar标题
-        toolbar.setTitleTextColor(Color.parseColor("#ffffff")); //设置标题颜色
-        toolbar.inflateMenu(R.menu.base_toolbar_menu);//设置右上角的填充菜单
-        //实现打开关/闭监听
+        initViews();
+
+        //实现打开/关闭监听
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.open, R.string.close) {
             @Override
             public void onDrawerOpened(View drawerView) {
@@ -49,13 +47,18 @@ public class DrawerActivity extends BaseActivity {
         };
         mDrawerToggle.syncState();
         mDrawerLayout.addDrawerListener(mDrawerToggle);
+
         //设置菜单列表
         arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, lvs);
         sidemenu.setAdapter(arrayAdapter);
     }
 
-    private void findViews() {
+    private void initViews() {
         toolbar = (Toolbar) findViewById(R.id.topbar);
+        toolbar.setTitle("Toolbar");//设置Toolbar标题
+        toolbar.setTitleTextColor(Color.parseColor("#ffffff")); //设置标题颜色
+        toolbar.inflateMenu(R.menu.base_toolbar_menu);//设置右上角的填充菜单
+
         mDrawerLayout = (DrawerLayout) findViewById(R.id.container);
         sidebar = (LinearLayout) findViewById(R.id.sidebar);
         sidemenu = (ListView) findViewById(R.id.sidemenu);
