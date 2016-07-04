@@ -34,6 +34,7 @@ public class DrawerActivity extends BaseActivity {
         findViews(); //获取控件
         toolbar.setTitle("Toolbar");//设置Toolbar标题
         toolbar.setTitleTextColor(Color.parseColor("#ffffff")); //设置标题颜色
+        toolbar.inflateMenu(R.menu.base_toolbar_menu);//设置右上角的填充菜单
         //实现打开关/闭监听
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.open, R.string.close) {
             @Override
