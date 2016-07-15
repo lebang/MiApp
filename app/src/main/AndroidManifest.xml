@@ -42,6 +42,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".Service.MyService" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.miapp.MyAIDLService"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
