@@ -9,6 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.facebook.react.BuildConfig;
+import com.facebook.react.LifecycleState;
+import com.facebook.react.ReactInstanceManager;
+import com.facebook.react.ReactRootView;
+import com.facebook.react.shell.MainReactPackage;
 import com.miapp.Fragment.FragmentAbout;
 import com.miapp.Fragment.FragmentHome;
 import com.miapp.Fragment.FragmentList;
@@ -24,12 +29,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     HeartView mHeartView;
 
+    private ReactRootView mReactRootView;
+    private ReactInstanceManager mReactInstanceManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        String activityName = this.getActivityName();
-        mHeartView = $(R.id.surfaceView);
+//        setContentView(R.layout.activity_main);
+//        String activityName = this.getActivityName();
+//        mHeartView = $(R.id.surfaceView);
 //        Toast.makeText(this,activityName,Toast.LENGTH_SHORT).show();
 
 //        mTabHome = (TextView) findViewById(R.id.tab_home);
@@ -42,11 +50,24 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 //        mSubmitBtn = $(R.id.button);
 //        mSubmitBtn.setOnClickListener(this);
+
+
+        mReactRootView = new ReactRootView(this);
+        mReactInstanceManager = ReactInstanceManager.builder()
+                .setApplication(getApplication())
+                .setBundleAssetName("index.android.bundle")
+                .setJSMainModuleName("index.android")
+                .addPackage(new MainReactPackage())
+                .setUseDeveloperSupport(BuildConfig.DEBUG)
+                .setInitialLifecycleState(LifecycleState.RESUMED)
+                .build();
+        mReactRootView.startReactApplication(mReactInstanceManager, "MyAwesomeApp", null);
+        setContentView(mReactRootView);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        mHeartView.reDraw();
+//        mHeartView.reDraw();
         return super.onTouchEvent(event);
     }
 

@@ -5,7 +5,7 @@ import android.view.View;
 
 /**
  * Created by lebang on 16-7-15.
- * 
+ *
  * @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
