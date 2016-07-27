@@ -35,6 +35,5 @@ dependencies {
     compile 'junit:junit:4.12'
     compile "com.facebook.react:react-native:+"
     compile 'com.android.volley:volley:+'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.github.bumptech.glide:glide:+'
 }
