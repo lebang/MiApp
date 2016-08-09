@@ -20,7 +20,6 @@ public class TopStoryAdapter extends BaseAdapter {
 
     private Context mContext;
     private List<TopStory> mTopStories;
-    private ImageLoader imageLoader;
 
     public TopStoryAdapter(Context context,List<TopStory> objects) {
         this.mContext= context;

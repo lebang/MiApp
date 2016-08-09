@@ -95,6 +95,7 @@ public class DrawerActivity extends BaseActivity implements View.OnClickListener
                     @Override
                     public void onResponse(JSONObject response) {
                         topStore(response.toString());
+                        Log.d("volley数据", response.toString());
                     }
                 }, new Response.ErrorListener() {
             @Override

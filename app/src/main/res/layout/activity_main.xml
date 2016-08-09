@@ -83,7 +83,7 @@
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="100dp">
         <Button
                 android:id="@+id/btn_start_service"
                 android:text="start"
@@ -101,5 +101,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
     </LinearLayout>
+
+    <com.miapp.Widget.ColorLineView android:layout_width="900dp"
+                                    android:layout_height="10dp"/>
 
 </LinearLayout>
