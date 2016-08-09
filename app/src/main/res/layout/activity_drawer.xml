@@ -22,27 +22,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         <!--主布局-->
-        <LinearLayout
-                android:orientation="vertical"
+
+        <ListView
+                android:id="@+id/top_stories_list"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <Button
-                    android:id="@+id/btn_start_service"
-                    android:text="start"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            <Button
-                    android:id="@+id/btn_stop_service"
-                    android:text="stop"
-                    android:visibility="visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            <Button
-                    android:id="@+id/btn_bind_service"
-                    android:text="bind"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-        </LinearLayout>
+                android:layout_height="match_parent"></ListView>
         <!--侧滑菜单-->
         <LinearLayout
                 android:id="@+id/sidebar"
